@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Background & Text */
+    --background: 210 25% 98%;       /* off-white */
+    --foreground: 210 10% 15%;       /* dark slate gray */
+
+    /* Primary & Secondary */
+    --primary: 220 90% 45%;          /* premium deep blue */
+    --primary-foreground: 0 0% 100%; /* white text on primary */
+
+    --secondary: 25 90% 55%;         /* orange accent */
+    --secondary-foreground: 0 0% 100%; 
+
+    --muted: 210 20% 90%;            /* light gray */
+    --muted-foreground: 210 10% 40%; 
+
+    --destructive: 0 75% 55%;        /* red for error/destructive */
+    --destructive-foreground: 0 0% 100%; 
+
+    /* Cards & UI */
+    --card: 210 25% 98%;              
+    --card-foreground: 210 10% 15%;
+
+    --border: 210 10% 80%;
+    --input: 210 20% 95%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 220 10% 12%;      /* very dark blue-gray */
+    --foreground: 0 0% 95%;          /* off-white text */
+
+    --primary: 220 90% 55%;          
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 25 90% 55%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 15% 18%;            
+    --muted-foreground: 0 0% 70%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --card: 220 15% 18%;              
+    --card-foreground: 0 0% 95%;
+
+    --border: 220 15% 30%;
+    --input: 220 15% 20%;
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: 'Inter', sans-serif;
+  }
+}
