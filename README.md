@@ -45,7 +45,7 @@ This application allows users to browse job listings, apply for jobs, and manage
 ##### Set up environment variables
 Create a `config.env` file inside `backend/config` with the following:
 
-```env
+
 PORT=
 API_KEY=
 API_SECRET=
@@ -53,8 +53,7 @@ CLOUD_NAME=
 DB_URL=
 JWT_SECRET_KEY=
 JWT_EXPIRE=
-COOKIE_EXPIRE=
-
+COOKIE_EXPIRE+
 
 ##### Run the backend
 cd backend
